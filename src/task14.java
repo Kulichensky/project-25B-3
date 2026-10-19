@@ -12,7 +12,7 @@ public class task14 {
         int count = 0;
         for (int x = 0; x <= 1000; x++) {
             if (x == e) {
-                continue; // деление на ноль нельзя
+                continue;
             }
             long value = (long) a * x * x * x + (long) b * x * x + (long) c * x + d;
             if (value == 0) {
