@@ -10,15 +10,16 @@ public class task14 {
         int e = sc.nextInt();
 
         int count = 0;
+
         for (int x = 0; x <= 1000; x++) {
-            if (x == e) {
-                continue;
-            }
-            long value = (long) a * x * x * x + (long) b * x * x + (long) c * x + d;
-            if (value == 0) {
-                count = count + 1;
+            if (x != e) {
+                int value = a * x * x * x + b * x * x + c * x + d;
+                if (value == 0) {
+                    count = count + 1;
+                }
             }
         }
+
         System.out.println(count);
     }
 }
